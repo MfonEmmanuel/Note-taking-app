@@ -39,24 +39,22 @@
 </head>
 <body>
 
-  <header class="sidebar data-sidebar">
+  <header class="sidebar active" data-sidebar>
 
     <div class="wrapper wrapper-1">
 
       <a href="/">
-        <img src="./src/images/icons8-create-16.png" alt="Notekeeper" class="logo-light">
+        <!-- <img src="./src/images/icons8-create-16.png" alt="Notekeeper" class="logo-light"> -->
         <img src="./src/images/icons8-create-16.png" alt="Notekeeper" class="logo-dark">
-        <span class="note">Note Keeper</span>
+        <span class="note">notekeeper</span>
+      </a>
 
-        <button class="menu-btn icon-btn large" aria-label="Close Menu" data-sidebar-toggle>
-          <span class="material-symbols-rounded">
-            close
-            </span>
+        <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggle>
+          <span class="material-symbols-rounded"
+           aria-hidden="true">close</span>
 
             <div class="state-layer"></div>
         </button>
-
-      </a>
 
     </div>
 
@@ -83,7 +81,7 @@
 
     <nav class="nav custom-scrollbar" data-sidebar-list>
 
-      <div class="nav-item">
+      <div class="nav-item active">
 
           <span class="text text-label-large" data-notebook-field>My Notebook</span>
 
