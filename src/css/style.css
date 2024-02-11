@@ -5,23 +5,23 @@
     --black: #000000;
 
     /* light theme */
-    --background-light: #fff8ff;
-    --on-background-light: #201a18;
-    --surface-light: #fff8f6;
-    --surface-container-low-light: #fef1ec;
-    --surface-container-highest-light: #ede0d8;
-    --on-surface-light: #201a18;
-    --on-surface-variant-light: #52443d;
-    --primary-light: #9d4300;
-    --on-primary-light: #ffffff;
-    --primary-container-light: #ffdbca;
+    --background-light: #FFFBFF;
+    --on-background-light: #201A18;
+    --surface-light: #FFF8F6;
+    --surface-container-low-light: #FEF1EC;
+    --surface-container-highest-light: #EDE0DB;
+    --on-surface-light: #201A18;
+    --on-surface-variant-light: #52443D;
+    --primary-light: #9D4300;
+    --on-primary-light: #FFFFFF;
+    --primary-container-light: #FFDBCA;
     --on-primary-container-light: #341100;
-    --secondary-container-light: #ffdbca;
-    --on-secondary-container-light: #2b160a;
-    --outline-light: #85736b;
-    --outline-variant-light: #d7c2b9;
-    --inverse-surface-light: #362f2c;
-    --inverse-on-surface-light: #fbeee9;
+    --secondary-container-light: #FFDBCA;
+    --on-secondary-container-light: #2B160A;
+    --outline-light: #857368;
+    --outline-variant-light: #D7C2B9;
+    --inverse-surface-light: #362F2C;
+    --inverse-on-surface-light: #FBEEE9;
 
     /* Dark theme */
     --background-dark: #201A18;
@@ -30,17 +30,17 @@
     --surface-container-low-dark: #201A18;
     --surface-container-highest-dark: #3A3330;
     --on-surface-dark: #d0c4bf;
-    --on-surface-variant-dark: #d7c2b9;
-    --primary-dark: #ffb690;
+    --on-surface-variant-dark: #D7C2B9;
+    --primary-dark: #FFB690;
     --on-primary-dark: #552100;
     --primary-container-dark: #783200;
-    --on-primary-container-dark: #ffdbca;
-    --secondary-container-dark: #5c4032;
-    --on-secondary-container-dark: #ffdbca;
-    --outline-dark: #a08d84;
-    --outline-variant-dark: #52443d;
-    --inverse-surface-dark: #ede0db;
-    --inverse-on-surface-dark: #201a18;
+    --on-primary-container-dark: #FFDBCA;
+    --secondary-container-dark: #5C4032;
+    --on-secondary-container-dark: #FFDBCA;
+    --outline-dark: #A08DB4;
+    --outline-variant-dark: #52443D;
+    --inverse-surface-dark: #EDE0DB;
+    --inverse-on-surface-dark: #201A18;
 
     /* TYPOGRAPHY */
     /* Font Family */
@@ -138,7 +138,7 @@
     --tr-duration-medium: 400ms;
     --tr-duration-long: 500ms;
     --tr-easing-linear: cubic-bezier(0, 0, 1, 1);
-    --tr-easing-emphasized: cubic-bezier(0, 2, 0, 0, 1);
+    --tr-easing-emphasized: cubic-bezier(0.2, 2, 0, 0, 1);
 
     /* Others */
     --sidebar-width: 360px;
@@ -202,12 +202,14 @@
     box-sizing: border-box;
 }
 
+li { list-style: none; }
+
 a,
 img,
 span,
 input,
 button,
-textarea { display: block; }
+textarea { display: flex; }
 
 a {
     color: inherit;
@@ -694,8 +696,8 @@ body {
     margin-block-end: var(--spacing-3);
 }
 
-/* [data-theme='dark'] .logo-light,
-.logo-dark { display:; } */
+[data-theme='dark'] .logo-light,
+.logo-dark { display: none; }
 
 [data-theme='dark'] .logo-dark {display: block; }
 

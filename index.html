@@ -39,17 +39,17 @@
 </head>
 <body>
 
-  <header class="sidebar" data-sidebar>
+  <header class="sidebar active" data-sidebar>
 
     <div class="wrapper wrapper-1">
 
       <a href="/">
-        <!-- <img src="./src/images/icons8-create-16.png" alt="Notekeeper" class="logo-light"> -->
+        <img src="./src/images/icons8-create-16.png" alt="Notekeeper" class="logo-light">
         <img src="./src/images/icons8-create-16.png" alt="Notekeeper" class="logo-dark">
         <span class="note">notekeeper</span>
       </a>
 
-        <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggle>
+        <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggler>
           <span class="material-symbols-rounded"
            aria-hidden="true">close</span>
 
@@ -94,7 +94,7 @@
 
           <button class="icon-btn small" aria-label="Delete notebook"
           data-tooltip="Delete notebook" data-delete-btn>
-          <span class="material-symbols-rounded" aria-hidden="true">Delete</span>
+          <span class="material-symbols-rounded" aria-hidden="true">delete</span>
 
           <div class="state-layer"></div>
          </button>
@@ -120,7 +120,7 @@
     <div class="header">
 
       <div class="wrapper">
-        <p class="title text-title-large" data-greeting>Good Morning</p>
+        <p class="title text-title-large" data-greeting></p>
         
         <span class="text text-body-medium" data-current-date>Sat, Sep 22 2023</span>
       </div>
